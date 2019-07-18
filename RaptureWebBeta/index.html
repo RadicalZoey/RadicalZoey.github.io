@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!-- This is the Beta Web page :D -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="We are streamers, gamers, content creators, a charity team. But most importantly, we are entertainers.">
+    <!-- <meta name="keywords" content="stream, streamers, game, gamer, content, creators, charity, team, entertainers"> -->
+    <meta name="author" content="Zoey Rad">
+    <title>Rapture Labs | Welcome to Rapture</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/main.js"></script>
+</head>
+  <body class="BColor TColor BImg">
+    <header>
+      <div class="center">
+        <div class="logo">
+
+          <h1 class="move1">Welcome to:</h1>
+          <h1 class=" move2">Rapture<span class="theme">Labs</span></h1>
+
+        </div>
+        <div class="move2">
+          <a  href="https://www.twitch.tv/rapturelabs"> <i class="icons fa fa-twitch" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://www.youtube.com/channel/UC9GPFyuc2vDHdMbhCe_bvfQ"> <i class="icons fa fa-youtube-play" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://twitter.com/RaptureLabs"> <i class="icons fa fa-twitter" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://www.instagram.com/rapturelabs/"> <i class="icons fa fa-instagram" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://www.instagram.com/rapturelabs/"> <i class="icons fab fab-discord" aria-hidden="true" style="font-size:60px"></i></a>
+        </div>
+      </div>
+
+    </header>
+  </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
+    <script>
+
+    var tl = new TimelineLite();
+    tl.timeScale(1);
+    tl.add('move2', 8);
+    tl.from('.logo', 3, {ease: Power2.easeOut, y:-150, opacity:0});
+    tl.staggerFrom('.icons', 2, {ease: Power2.easeOut, opacity:0, scale:.5, y:-50}, .5);
+    tl.to('.move1', 3, {ease: Power2.easeOut, opacity:0, scale:.7, y:-100}, 'move2');
+    tl.to('.move2', 3, {ease: Power2.easeOut, scale:.85}, 'move2');
+
+    </script>
+
+</html>

@@ -1,2 +1,0 @@
-# RadicalZoey.github.io
-Website
