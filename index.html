@@ -21,8 +21,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
     <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
+<div id="particles-js"></div>
+<audio autoplay>
+  <source src="./audio/SleighBells.mp3" type"audio/mpeg">
+</audio>
+
   <body class="BColor TColor BImg">
+
+
+
     <header>
       <div class="center">
         <div class="logo">
@@ -67,7 +76,9 @@
     tl.to('.move2', 3, {ease: Power2.easeOut, scale:.85}, 'move2');
     tl.fromTo('.pointer', 3, {ease: Power2.easeOut, opacity:0, rotation:20, scale:.65}, {ease: Bounce.easeOut, opacity:100, rotation:3, scale:.95});
 
+    particlesJS.load('particles-js', './scripts/particles.json', function(){console.log('Particles Loaded!'),console.log('Have a Merry Christmas!')});
 
+    console.log('Rapture Version: 0.1.5')
     </script>
 
 </html>
