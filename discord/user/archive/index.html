@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135963738-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="en" dir="ltr">
+  <head>
 
-        gtag('config', 'UA-135963738-1');
-        </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135963738-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-135963738-1');
+            </script>
+      <!-- END Global site tag (gtag.js) - Google Analytics -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="An archive of bad users and information on them built over time.">
-    <!-- <meta name="keywords" content="stream, streamers, game, gamer, content, creators, charity, team, entertainers, content, gaming"> -->
+    <meta name="description" content="User Archive. Recorded and collected by a Bot :)">
+    <meta name="keywords" content="">
     <meta name="author" content="Zoey Rad">
-    <title>Rapture Lab | User Archive</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-    <!-- <script src="./scripts/main.js"></script> -->
-</head>
-  <body class="BColor TColor BImg">
-    <header>
-      <div class="center">
-        <div class="logo">
+    <title>RaptureLab | User Archive</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../../bootstrap/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../../../bootstrap/bootstrap.min.css">
+    <script src="./scripts/user.js"></script>
+  </head>
+  <body>
 
-          <h1 class="move1">Welcome to:</h1>
-          <h1 class=" move2">Rapture<span class="theme">Lab</span></h1>
-          <h1 class=" move2">User Archive</h1>
-
-    </header>
   </body>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
-    <script>
-
-
-
-    </script>
+  <script>
+  $.getJSON("user.json", function(json) {
+      console.log(json);
+  });  
+  </script>
 
 </html>
